@@ -1,0 +1,13 @@
+
+
+curl -XPOST -H"X-Ovh-Application: 9WKB1PtG17IQGkHy" -H "Content-type: application/json" \
+https://eu.api.ovh.com/1.0/auth/credential  -d '{
+    "accessRules": [
+        {
+            "method": "GET",
+            "path": "/*"
+        }
+    ],
+    "redirection":"https://www.qonnect.fr/"
+}'
+"consumerKey":"JGHsZ56VPMtqKerGx11a2yP5ipHBswOf"
