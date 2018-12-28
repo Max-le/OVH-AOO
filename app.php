@@ -26,6 +26,8 @@
 
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
 
+     <?php include('credentials.php'); ?>
+
   </p>
 
 
