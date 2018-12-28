@@ -27,6 +27,7 @@ $dns_record = $ovh->get('/domain/zone/'.$domain_name.'/record');
 
 
 
+echo '<p> Liste des enregistrements pour le domaine <em>'.$domain_name .'</em> : </p>';
 
 for ($i=0; $i < count($dns_record); $i++) { 
 	$record_data = $ovh->get('/domain/zone/'.$domain_name.'/record/'.$dns_record[$i]); ;

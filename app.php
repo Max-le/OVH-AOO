@@ -22,7 +22,7 @@
     </div>
     <div class="col-sm-4 nice-frame">
       <p class="text-center">Hello, world!</p>
-      <p class=" text-center"> Ceci est une page PHP. On peut donc exécuter du code sur le serveur web. <br> Par exemple afficher l'heure :
+      <p class=" text-center"> Cette page web a été générée à :
 
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
 
