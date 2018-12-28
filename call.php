@@ -33,7 +33,7 @@ for ($i=0; $i < count($dns_record); $i++) {
 	$record_data = $ovh->get('/domain/zone/'.$domain_name.'/record/'.$dns_record[$i]); ;
 	$myJSON = json_encode($record_data);
 	$json = json_decode($myJSON, true);
-	echo $json['target'].'  Type : '.$json['fieldType'].'<br>';
+	echo $json['target'].'  '.$json['fieldType'].'<br>';
 
 	//echo $myJSON .'<br>'; 
 	
