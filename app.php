@@ -26,14 +26,18 @@
 
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
 
-     <?php include('credentials.php'); ?>
 
   </p>
+<p>
+  <?php include('call.php');  ?>
 
+</p>
 
 
     </div>
     <div class="col-sm-4">
+           <?php include('credentials.php'); ?>
+<p>App key : <?php echo $appkey ?></p>
     </div>
   </div>
 </div>
