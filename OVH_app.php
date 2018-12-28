@@ -42,7 +42,7 @@ for ($i=0; $i < count($dns_record); $i++) {
 	echo $json['target'].'<br>';
 
 	//echo $myJSON .'<br>'; 
-	k
+	
 
 
 }
