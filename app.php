@@ -24,7 +24,7 @@
       <p class="text-center">Hello, world!</p>
       <p class=" text-center"> Ceci est une page PHP. On peut donc exécuter du code sur le serveur web. <br> Par exemple afficher l'heure :
 
-     <?php echo date("D M d, Y G:i:s a") ?> 
+     <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
 
   </p>
 
