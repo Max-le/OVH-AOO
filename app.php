@@ -5,19 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- My style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>OVH Web App</title>
   </head>
   <body>
-
+<h1>My very first web app</h1>
 
     <div class="container">
   <div class="row">
     <div class="col-sm-4">
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 nice-frame">
       <p class="text-center">Hello, world!</p>
     </div>
     <div class="col-sm-4">
