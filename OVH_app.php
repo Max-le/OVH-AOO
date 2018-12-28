@@ -1,10 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>APPLI OVH </title>
-</head>
-<body>
 <?php 
 
 $appkey = '9WKB1PtG17IQGkHy'; 
