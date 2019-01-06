@@ -28,6 +28,8 @@
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
   </p>
 
+  <p>Note to myself : <b> Use the fucking API of the journal !!!</b></p>
+
     <?php include 'xml.php'; ?>
 
 
