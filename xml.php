@@ -5,6 +5,10 @@
 	$URL = 'http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml';
 	$myXMLdata = simplexml_load_file($URL);
 
-	 echo $myXMLdata->channel->item[0]->title;
+foreach ($myXMLdata->channel->item as $item ) {
+	 echo $item->title;
+	 echo '<br>';
+}
 
   ?>
+
