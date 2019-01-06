@@ -19,25 +19,20 @@
     <div class="container">
   <div class="row">
     <div class="col-sm-4">
+      First column.
     </div>
     <div class="col-sm-4 nice-frame">
       <p class="text-center">Hello, world!</p>
       <p class=" text-center"> Cette page web a été générée à :
 
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
-
-
   </p>
-<p>
-  <?php include('call.php');  ?>
 
-</p>
 
 
     </div>
     <div class="col-sm-4">
-           <?php include('credentials.php'); ?>
-<p>App key : <?php echo $appkey ?></p>
+Some text.
     </div>
   </div>
 </div>
