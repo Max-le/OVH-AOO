@@ -1,24 +1,28 @@
-<?php 
-        // create curl resource 
-        $ch = curl_init(); 
+<?php
 
-        // set url 
-        curl_setopt($ch, CURLOPT_URL, "https://newsapi.org/v2/top-headlines?country=be&apiKey=fc48327c5dd6468c9c80f74d205727c7"); 
+$curl = curl_init();
 
-        //return the transfer as a string 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://document-parser-api.lateral.io/?url=https://www.lemonde.fr/les-decodeurs/article/2019/01/08/le-projet-de-loi-anti-casseurs-d-edouard-philippe-est-il-juridiquement-tenable_5406398_4355770.html",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => array(
+    "content-type: application/json",
+    "subscription-key: 55ab3caf64ff9f9edb153109aaaf0f87"
+  ),
+));
 
-        // $output contains the output string 
-         $output = curl_exec($ch);
-         $json = json_decode($output);
+$response = curl_exec($curl);
+$err = curl_error($curl);
 
-         //GOT AN ARRAY AT THIS POINT
-         $array = $json->articles;
+curl_close($curl);
 
-         echo $text = $array[1]->description;
-
-         
-
-        // close curl resource to free up system resources 
-        curl_close($ch);      
-?>
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
