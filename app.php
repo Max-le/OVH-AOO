@@ -28,7 +28,8 @@
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
   </p>
 
-  <p>Note to myself : <b> Use the fucking API of the journal !!!</b></p>
+  <p>Note to myself : <b> Use the fucking API of the journal !!!
+    <br>UPDATE : Actually, you can't get full article with free API key ( newsAPI.org provides full content for 300$/month...</b></p>
 
     <?php include 'API_call.php';
      ?>
