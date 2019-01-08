@@ -30,7 +30,10 @@
 
   <p>Note to myself : <b> Use the fucking API of the journal !!!</b></p>
 
-    <?php include 'xml.php'; ?>
+    <?php include 'API_call.php';
+    echo $output;
+     ?>
+
 
 
 
