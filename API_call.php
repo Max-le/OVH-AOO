@@ -9,7 +9,18 @@
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 
         // $output contains the output string 
-        $output = curl_exec($ch); 
+         $output = curl_exec($ch);
+         $json = json_decode($output);
+
+         //GOT AN ARRAY AT THIS POINT
+         $array = $json->articles;
+         //print_r($array[2]);
+
+         //Still an array , but represneting the article
+         $article = $array[1];
+         print_r($article->title);
+
+         
 
         // close curl resource to free up system resources 
         curl_close($ch);      
