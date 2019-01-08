@@ -14,11 +14,8 @@
 
          //GOT AN ARRAY AT THIS POINT
          $array = $json->articles;
-         //print_r($array[2]);
 
-         //Still an array , but represneting the article
-         $article = $array[1];
-         print_r($article->title);
+         echo $text = $array[1]->description;
 
          
 
