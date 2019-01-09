@@ -24,8 +24,8 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-        
+
 $json = json_decode($response);
 
-  echo $json->title;
+  echo $json->body;
 }
