@@ -28,8 +28,8 @@
      <b><?php echo  date("D M d, Y G:i:s a") ?> </b>
   </p>
 
-  <p>Note to myself : <b> Use the fucking API of the journal !!!
-    <br>UPDATE : Actually, you can't get full article with free API key ( newsAPI.org provides full content for 300$/month...</b><br><br>So you want to use this : https://lateral.io/docs/article-extractor/reference#document-parser-extract-article-get </p>
+  <p>Note to myself :
+    <br>UPDATE : Actually, you can't get full article with free API key ( newsAPI.org provides full content for 300$/month...</b><br><br>So you want to use this : https://lateral.io/docs/article-extractor/reference#document-parser-extract-article-get <br><br> Enovyer des mails en PHP : d'abord se connecter au serveur IMAP ( http://php.net/manual/fr/function.imap-open.php ) </p>
 
     <?php include 'API_call.php';
      ?>
