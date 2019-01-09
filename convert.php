@@ -8,6 +8,10 @@ $body = str_replace("\n", "<br>",$json->body );
 
 echo $body;
 
+// Signature line
+
+$end = "<br><br><br><em>Cet article a été généré par Web2Kindle à ".  date("h:i:sa")."</em>";
+echo $end;
 
 
 
