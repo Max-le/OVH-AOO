@@ -15,6 +15,8 @@ $imapLink = imap_open("{ssl0.ovh.net:993/imap/ssl}INBOX", "info@qonnect.fr", "fy
      // On récupère les informations
     $mailBoxInfos = imap_check($imapLink);
 
+    imap_mail("max.09@outlook.com", "test via PHP", "hey ! ");
+
     print_r($mailBoxInfos);
 
     ?>
